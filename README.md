@@ -1,3 +1,27 @@
+# Changes
+
+added TimeConverterImpl class which contain entire logic
+added TestTimeConverterImpl class for junit / TDD
+added src\test\resources\stories\berlin-clock-bdd.story for more BDD and ensured they are run successfully along with existing BDD
+BDD reports are also checked in
+
+#Issues:-
+
+# BerlinClockFixture class has to be edited to initialize berlinClock - I have done that. See below line
+
+private TimeConverter berlinClock = new TimeConverterImpl();
+
+# ClasspathStoryFinder is not able to find story file automatically in its current form , hence during BDD - i have put absolute path [ret.add(new File("H:\\java-berlin-clock-master\\src\\test\\resources\\stories"));] in getRootDirs() method and made it work, but before checkin to github i have removed this line as i trust the declaration-
+/**
+ * A class to help us find stories (files) across a classpath with many roots.  This is especially important
+ * when finding files when executed from a Gradle test context.
+ */
+
+
+
+
+
+
 # The Berlin Clock
 
 The Berlin Uhr (Clock) is a rather strange way to show the time. On the top of the clock there is a yellow lamp that
