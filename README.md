@@ -1,11 +1,14 @@
 # Changes
 
-added TimeConverterImpl class which contain entire logic
-added TestTimeConverterImpl class for junit / TDD
-added src\test\resources\stories\berlin-clock-bdd.story for more BDD and ensured they are run successfully along with existing BDD
-BDD reports are also checked in
+1. added TimeConverterImpl class which contain entire logic.
 
-#Issues:-
+2. added TestTimeConverterImpl class for junit / TDD
+
+3. added src\test\resources\stories\berlin-clock-bdd.story for more BDD and ensured they are run successfully along with existing BDD
+
+4.BDD reports are also checked in.
+
+#Issues
 
 # BerlinClockFixture class has to be edited to initialize berlinClock - I have done that. See below line
 
